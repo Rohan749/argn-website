@@ -39,9 +39,9 @@ const Text: React.FC<TextProps> = ({
   const startScrambleAnimation = () => {
     const textElement = textRef.current;
     const originalText = textElement?.textContent;
-    const words = split.words;
-    const chars = split.chars;
-    const lines = split.lines;
+    // const words = split.words;
+    // const chars = split.chars;
+    // const lines = split.lines;
 
     animationInProgress.current = true;
 

@@ -43,14 +43,14 @@ function Button({
   className,
   variant,
   size,
-  asChild = false,
+  // asChild = false,
   animateOnHover,
   wobble,
   wobbleBy,
   ...props
 }: React.ComponentProps<"button"> &
   VariantProps<typeof buttonVariants> & {
-    asChild?: boolean;
+    // asChild?: boolean;
     animateOnHover?:
       | "fade-up"
       | "fade-down"
@@ -115,7 +115,7 @@ function Button({
   };
 
   let fromVars: gsap.TweenVars = { opacity: 1, y: 0 };
-  let toVars: gsap.TweenVars = {
+  const toVars: gsap.TweenVars = {
     opacity: 1,
     y: 0,
     x: 0,

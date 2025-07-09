@@ -2,44 +2,44 @@ import VisualCode from "./VisualCode";
 import CommandTabs from "./CommandTab";
 import Vortext from "../animatedComponents/Vortext";
 
-const features = [
-  {
-    title: "One Prompt, Perfect Animation",
-    description:
-      "Describe what you want, get production-ready GSAP components instantly. No config files, no learning curves.",
-    icon: "⚡",
-  },
-  {
-    title: "Awwwards-Quality Standards",
-    description:
-      "Every component is crafted to match the animation quality you see on award-winning websites.",
-    icon: "🏆",
-  },
-  {
-    title: "Zero Bundle Bloat",
-    description:
-      "Unlike libraries that add 100kb+, get only the exact component you need. Keep your app lightning fast.",
-    icon: "🪶",
-  },
-  {
-    title: "Pure CSS & JS Options",
-    description:
-      "Need lightweight? Skip GSAP entirely with our vanilla CSS and JavaScript animation alternatives.",
-    icon: "🎯",
-  },
-  {
-    title: "Component-Level Precision",
-    description:
-      "Each animation is individually crafted, not generated from templates. True attention to detail.",
-    icon: "🔧",
-  },
-  {
-    title: "Framework Agnostic",
-    description:
-      "Works with React, Vue, Svelte, vanilla JavaScript, or any framework. Your choice, your stack.",
-    icon: "🔄",
-  },
-];
+// const features = [
+//   {
+//     title: "One Prompt, Perfect Animation",
+//     description:
+//       "Describe what you want, get production-ready GSAP components instantly. No config files, no learning curves.",
+//     icon: "⚡",
+//   },
+//   {
+//     title: "Awwwards-Quality Standards",
+//     description:
+//       "Every component is crafted to match the animation quality you see on award-winning websites.",
+//     icon: "🏆",
+//   },
+//   {
+//     title: "Zero Bundle Bloat",
+//     description:
+//       "Unlike libraries that add 100kb+, get only the exact component you need. Keep your app lightning fast.",
+//     icon: "🪶",
+//   },
+//   {
+//     title: "Pure CSS & JS Options",
+//     description:
+//       "Need lightweight? Skip GSAP entirely with our vanilla CSS and JavaScript animation alternatives.",
+//     icon: "🎯",
+//   },
+//   {
+//     title: "Component-Level Precision",
+//     description:
+//       "Each animation is individually crafted, not generated from templates. True attention to detail.",
+//     icon: "🔧",
+//   },
+//   {
+//     title: "Framework Agnostic",
+//     description:
+//       "Works with React, Vue, Svelte, vanilla JavaScript, or any framework. Your choice, your stack.",
+//     icon: "🔄",
+//   },
+// ];
 
 export const VortextPropsTable = [
   {
