@@ -11,6 +11,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { Button } from "../ui/button";
 import Hamburger from "hamburger-react";
+import Link from "next/link";
 
 const LeftPanel = () => {
   const pathname = usePathname();
@@ -26,9 +27,8 @@ const LeftPanel = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-      setIsOpen(false)
-  }, [pathname])
-
+    setIsOpen(false);
+  }, [pathname]);
 
   return (
     <>
@@ -42,25 +42,43 @@ const LeftPanel = () => {
             ARGN<span className="gradient_text">UI</span>
           </span>
           <div className="xl:hidden visible flex z-[99999] relative">
-            <Hamburger toggled={isOpen} rounded onToggle={() =>setIsOpen(!isOpen)} size={25} />
+            <Hamburger
+              toggled={isOpen}
+              rounded
+              onToggle={() => setIsOpen(!isOpen)}
+              size={25}
+            />
           </div>
-          <div className={`fixed ${isOpen ? "right-0" :"right-[-100%]"} duration-600 ease-in-out transition-all h-screen z-[9999] top-0 p-5 bg-[var(--dark-gray)] flex flex-col gap-5 pt-15`}>
+          <div
+            className={`fixed ${
+              isOpen ? "right-0" : "right-[-100%]"
+            } duration-600 ease-in-out transition-all h-screen z-[9999] top-0 p-5 bg-[var(--dark-gray)] flex flex-col gap-5 pt-15`}
+          >
             <MotionLink href={"/"}>Home</MotionLink>
             <MotionLink href={"/installation"}>Installation</MotionLink>
             <MotionLink href={"/components"}>Components</MotionLink>
             {/* <MotionLink href={"/examples"}>Examples</MotionLink> */}
             <div className="flex flex-col gap-5 text-3xl ">
               <div className="flex gap-10">
+                <Link href={"https://www.youtube.com/@rcode01"} target="_blank">
                 <FaYoutube />
+                </Link>
+                <Link href="https://github.com/Rohan749"  target="_blank">
                 <FaGithub />
+                </Link>
               </div>
-              <Button>SHARE YOUR IDEA</Button>
+              <a href="https://tally.so/r/310Xll" target="_blank">
+                <Button>SHARE YOUR IDEA</Button>
+              </a>
             </div>
           </div>
           <div className=" h-full w-full  justify-end items-center gap-10 text-3xl xl:flex hidden">
             <FaYoutube />
             <FaGithub />
-            <Button>SHARE YOUR IDEA</Button>
+            <a href="https://tally.so/r/310Xll" target="_blank">
+              {" "}
+              <Button>SHARE YOUR IDEA</Button>
+            </a>
           </div>
         </div>
       </div>

@@ -64,9 +64,11 @@ export const HeroSection = () => {
           </span>
         </p>
         <div className="flex xl:flex-row flex-col justify-between items-center xl:items-start gap-15">
+          <a href="https://tally.so/r/310Xll" target="_blank">
         <Button >
           Get Early Access
         </Button>
+        </a>
         <div className="flex flex-wrap items-center gap-10">
         {techStack.map((tech) => (
         <div key={tech.name} className="flex items-center gap-2">
