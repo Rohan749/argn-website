@@ -61,7 +61,7 @@ function Button({
     wobbleBy?: "chars" | "words";
   }) {
   const buttonRef = React.useRef<HTMLButtonElement | null>(null);
-  const splitRef = React.useRef<any>(null);
+  const splitRef = React.useRef<SplitText>(null);
 
    const handleHoverAnimation = () => {
       if (buttonRef.current) {

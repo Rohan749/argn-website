@@ -15,7 +15,7 @@ interface TextProps extends React.HTMLAttributes<HTMLDivElement> {
 
 const Vortext: React.FC<TextProps> = ({ animateBy, className, children, ...props }) => {
   const textRef = useRef<HTMLDivElement>(null);
-  let split: any;
+  let split: SplitText;
 
   const startVortextAnimation = () => {
     const tl = gsap.timeline({

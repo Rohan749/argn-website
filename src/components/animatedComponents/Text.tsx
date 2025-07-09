@@ -34,7 +34,7 @@ const Text: React.FC<TextProps> = ({
   const textRef = useRef<HTMLDivElement>(null);
   const animationInProgress = useRef(false);
   const mouseInside = useRef(false);
-  let split: any;
+  let split: SplitText;
 
   const startScrambleAnimation = () => {
     const textElement = textRef.current;
