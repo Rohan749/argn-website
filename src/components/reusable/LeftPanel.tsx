@@ -12,10 +12,6 @@ import { FaYoutube } from "react-icons/fa";
 import { Button } from "../ui/button";
 import Hamburger from "hamburger-react";
 
-type Props = {
-  setSection: React.Dispatch<React.SetStateAction<number>>;
-};
-
 const LeftPanel = () => {
   const pathname = usePathname();
 

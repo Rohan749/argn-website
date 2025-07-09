@@ -52,9 +52,9 @@ const Components = () => {
         <h4 className="font_custom font-bold text-[var(--light-gray)]">GSAP Animation Components</h4>
         <div className="grid grid-cols-3 ">
           {GSAPComponents.map(({ component, componentArray, link }, index) => (
-            <button
+            <button key={link}
               className="components my-5 w-full px-5 py-2.5 text-lg font-bold"
-              key={link}
+              
             >
               <MotionLink href={link}>{component}</MotionLink>
             </button>
@@ -67,9 +67,9 @@ const Components = () => {
         <div className="grid grid-cols-3 ">
           {nonGSAPComponents.map(
             ({ component, componentArray, link }, index) => (
-              <button
+              <button key={link}
                 className="components my-5 w-full px-5 py-2.5 text-lg font-bold"
-                key={link}
+                
               >
                 <MotionLink href={link}>{component}</MotionLink>
               </button>
