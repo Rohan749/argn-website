@@ -1,13 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { ArrowDown } from "lucide-react";
-import Vortext from "../animatedComponents/Vortext";
-import Text from "../animatedComponents/Text";
-import Link from "next/link";
 import gsap from "../../assets/images/gsap.png"
-import tailwind from "../../assets/images/tailwindcss.svg"
 import nextjs from "../../assets/images/nextdotjs.png"
 import vite from "../../assets/images/vite.svg"
 import typescript from "../../assets/images/typescript.svg"

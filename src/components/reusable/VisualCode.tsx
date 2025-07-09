@@ -5,7 +5,6 @@ import { FiCopy, FiCheck, FiRefreshCw } from "react-icons/fi";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import { BiLogoTypescript } from "react-icons/bi";
-import { BsTypeStrikethrough } from "react-icons/bs";
 
 type CommandTabsProps = {
   codeSnippet: string;

@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import LeftPanel from "./reusable/LeftPanel";
-import RightPanel from "./reusable/RightPanel";
 import Home from "./Home";
 import Installation from "./Installation";
 import Components from "./Components";

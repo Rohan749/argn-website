@@ -1,6 +1,3 @@
-import { Button } from "@/components/reusable/button";
-import { Badge } from "@/components/reusable/badge";
-import { ArrowDown } from "lucide-react";
 import { HeroSection } from "./reusable/HeroSection";
 import { FeaturesGrid } from "./reusable/FeaturesGrid";
 import { ComparisonSection } from "./reusable/ComparisonSection";

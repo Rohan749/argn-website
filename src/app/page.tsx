@@ -1,5 +1,4 @@
 import Home from "@/components/Home";
-import LeftPanel from "@/components/reusable/LeftPanel";
 
 export default function Page() {
   return (

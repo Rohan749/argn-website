@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import { SiVite } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
-import CommandTabs from "./reusable/CommandTab";
 import NextjsInstall from "./NextjsInstall";
 import ViteInstallation from "./ViteInstallation";
 

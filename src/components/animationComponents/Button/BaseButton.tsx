@@ -1,13 +1,9 @@
 "use client";
 
 import CommandTabs from "@/components/reusable/CommandTab";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { ButtonExamplesWithCode, ButtonPropsTable } from "./ButtonConstants";
-import Image from "next/image";
-import gif1 from "@/assets/gif/button-exp.gif";
-import { useInView } from "react-intersection-observer";
 import VisualCode from "@/components/reusable/VisualCode";
-import { Button } from "@/components/animatedComponents/Button";
 
 const BaseButton = () => {
   return (

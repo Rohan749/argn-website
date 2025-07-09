@@ -1,10 +1,8 @@
 "use client";
 
 import { JSX, useState } from "react";
-import { ChevronDown } from "lucide-react";
 import BaseButton from "./animationComponents/Button/BaseButton";
 import BaseText from "./animationComponents/Text/BaseText";
-import Link from "next/link";
 import VortextComponent from "./animationComponents/Text/VortextComponent";
 import MotionLink from "@/lib/MotionLink";
 

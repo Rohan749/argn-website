@@ -2,15 +2,11 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import logo from "@/assets/images/ARGNUI.png";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { MdArrowDropDown } from "react-icons/md";
 import MotionLink from "@/lib/MotionLink";
 import { MdInstallDesktop } from "react-icons/md";
-import { RiInstallFill } from "react-icons/ri";
 import { GoHome } from "react-icons/go";
 import { FiLayers } from "react-icons/fi";
-import { IoPlayOutline } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { Button } from "../ui/button";
@@ -34,9 +30,7 @@ const LeftPanel = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    if(isOpen) {
       setIsOpen(false)
-    }
   }, [pathname])
 
 

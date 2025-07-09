@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import CommandTabs from "@/components/reusable/CommandTab";
-import { BaseTextPropsTable, TextExamplesWithCode, VortextExamples, VortextPropsTable } from "./TextConstants";
+import { BaseTextPropsTable, VortextExamples, VortextPropsTable } from "./TextConstants";
 import VisualCode from "@/components/reusable/VisualCode";
 import Vortext from "@/components/animatedComponents/Vortext";
 

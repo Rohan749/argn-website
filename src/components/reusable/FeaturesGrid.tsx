@@ -1,4 +1,3 @@
-import { Card, CardContent } from "@/components/ui/card";
 import VisualCode from "./VisualCode";
 import CommandTabs from "./CommandTab";
 import Vortext from "../animatedComponents/Vortext";
