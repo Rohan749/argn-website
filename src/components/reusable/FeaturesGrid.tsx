@@ -107,7 +107,7 @@ export const FeaturesGrid = () => {
         {/* Code Examples */}
         <div className="space-y-8 mb-16">
           {VortextExamples.map(
-            ({ name, description, codeSnippet, code }, index) => (
+            ({ name, description, codeSnippet, code }) => (
               <div key={name} className="space-y-4">
                 <div className="text-left">
                   <h3 className="text-2xl font-semibold text-white mb-2">

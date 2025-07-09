@@ -39,11 +39,6 @@ const GSAPComponents: LinkItem[] = [
 ];
 
 const Components = () => {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-
-  const toggle = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
 
   return (
     <section className="w-full h-full flex flex-col gap-10 xl:mt-20 pb-5">
@@ -51,7 +46,7 @@ const Components = () => {
       <div>
         <h4 className="font_custom font-bold text-[var(--light-gray)]">GSAP Animation Components</h4>
         <div className="grid grid-cols-3 ">
-          {GSAPComponents.map(({ component, componentArray, link }, index) => (
+          {GSAPComponents.map(({ component, link }) => (
             <button key={link}
               className="components my-5 w-full px-5 py-2.5 text-lg font-bold"
               
@@ -66,7 +61,7 @@ const Components = () => {
         <h4 className="font_custom font-bold text-[var(--light-gray)]">Pure CSS Animation Components</h4>
         <div className="grid grid-cols-3 ">
           {nonGSAPComponents.map(
-            ({ component, componentArray, link }, index) => (
+            ({ component, link }) => (
               <button key={link}
                 className="components my-5 w-full px-5 py-2.5 text-lg font-bold"
                 
