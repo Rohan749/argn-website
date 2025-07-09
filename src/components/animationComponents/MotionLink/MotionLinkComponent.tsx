@@ -56,7 +56,7 @@ const MotionLinkComponent = () => {
             <VisualCode 
               code={<div className="flex flex-col items-center justify-center gap-5">
                 <div className="font-bold tracking-5">Watch the route change animations on this site!</div>
-                <div className="flex gap-15 bg-[var(--dark-gray)] py-2.5 px-10 rounded-2xl">
+                <div className="flex gap-15 bg-[var(--gray)] py-2.5 px-10 rounded-2xl">
                 <MotionLink href="/">Home</MotionLink>
                 <MotionLink href="/installation">Installation</MotionLink>
                 <MotionLink href="/components">Component</MotionLink>
