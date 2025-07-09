@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Rubik, Anton, Jura } from "next/font/google";
 import "./globals.css";
+import LeftPanel from "@/components/reusable/LeftPanel";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -10,6 +11,24 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const anton = Anton({
+  variable: "--font-anton",
+  subsets: ["latin"],
+  weight: ["400"],
+});
+
+const rubik = Rubik({
+  variable: "--font-rubik",
+  subsets: ["latin"],
+});
+
+
+const sync = Jura({
+  variable: "--font-custom",
+  subsets: ["latin"],
+  weight: ["400", "700"]
 });
 
 export const metadata: Metadata = {
@@ -24,10 +43,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={`${geistSans.variable} ${anton.variable} ${geistMono.variable} ${rubik.variable} ${sync.variable}  antialiased `}>
+        <div className="flex gap-5 h-full w-full ">
+          <LeftPanel />
+          <div  className="fixed bg_container"/>
+          <div className={`xl:ml-50 w-full p-2.5 wrapper xl:mt-20 mt-25 overflow-hidden`}>
+            {children}
+            </div>
+        </div>
       </body>
     </html>
   );
